@@ -1,1 +1,1 @@
-module.exports.plate = require("./lcd");
+module.exports = require("./lcd");
