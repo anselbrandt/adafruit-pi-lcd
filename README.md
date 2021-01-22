@@ -13,3 +13,18 @@ This is currently a work in progress. See [adafruit-i2c-lcd](https://github.com/
 ```bash
 yarn add https://github.com/anselbrandt/adafruit-pi-lcd
 ```
+
+### Example
+
+```javascript
+const LCDPLATE = require("adafruit-pi-lcd");
+const lcd = new LCDPLATE(1, 0x20);
+
+lcd.backlight(lcd.colors.ON);
+lcd.message("Hello World!");
+
+lcd.on("button_change", function (button) {
+  lcd.clear();
+  lcd.message("Button changed:\n" + lcd.buttonName(button));
+});
+```
