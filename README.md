@@ -28,3 +28,15 @@ lcd.on("button_change", function (button) {
   lcd.message("Button changed:\n" + lcd.buttonName(button));
 });
 ```
+
+### API
+
+- const lcd = new LCDPLATE(device:String,address:Number,[pollInterval:Number])
+- lcd.clear()
+- lcd.home()
+- lcd.close()
+- lcd.backlight(lcd.colors.ON) or lcd.backlight(lcd.colors.OFF)
+- lcd.message(test:String, [clear:boolean])
+- lcd.createChar(index:Number, pattern:byte[])
+- lcd.buttonState():Number
+- lcd.buttonName(val:Number):String
