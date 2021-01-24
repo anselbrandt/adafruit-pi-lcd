@@ -43,6 +43,8 @@ lcd.on("button_change", function (button) {
 
 ### Custom Characters
 
+The LCD supports up to 8 custom characters at a time.
+
 [LCD Custom Character Generator](https://maxpromer.github.io/LCD-Character-Creator/)
 
 ```javascript
